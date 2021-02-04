@@ -10,13 +10,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common ArrowOS stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/nusantara/config/common.mk)
 
 # Inherit from X01BD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_X01BD
+PRODUCT_NAME := nad_X01BD
 PRODUCT_DEVICE := X01BD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X01BDA
@@ -32,4 +32,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Build fingerprint
 BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys"
 
-DEVICE_MAINTAINER := SonalSingh18
+DEVICE_MAINTAINER := IdhooBond
